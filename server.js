@@ -236,7 +236,7 @@ app.get('/products', async (req, res) => {
 
 app.get('/products/:id', async (req, res) => {
   const id = req.params.id
-  const product = products.filter(product => product.id === id)[0]
+  const product = products.filter(product => product._id === id)[0]
   res.json(product)
 })
 
@@ -248,7 +248,7 @@ app.post('/products', (req, res) => {
 
 app.put('/products/:id', async (req, res) => {
   const id = req.params.id
-  const productIndex = products.findIndex(product => product.id === id)
+  const productIndex = products.findIndex(product => product._id === id)
   const product = { ...products[productIndex], ...req.body }
   products.splice(productIndex, 1, product)
   res.json(product)
@@ -256,7 +256,7 @@ app.put('/products/:id', async (req, res) => {
 
 app.delete('/products/:id', async (req, res) => {
   const id = req.params.id
-  const productIndex = products.findIndex(product => product.id === id)
+  const productIndex = products.findIndex(product => product._id === id)
   products.splice(productIndex, 1)
   res.json(products)
 })
