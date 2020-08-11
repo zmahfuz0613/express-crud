@@ -113,7 +113,7 @@ Consider this array:
 const users = ['Sophia', 'Bob', 'Kim', 'John', 'Allan', 'Chloe', 'Jen', 'Ally', 'Ben']
 ```
 
-1. In the server definition in `server.js`, create a route for the path `/user/:name`, so that a visitor could enter `/user/ben` or `/user/kim`. The server should respond "Ben is a user!" or "Ally is a user!" if the user does not exist, the server should respond "Who is Jimbo?" or "Who is Peter?"
+1. In the server definition in `server.js`, create a route for the path `/users/:name`, so that a visitor could enter `/users/ben` or `/users/kim`. The server should respond "Ben is a user!" or "Ally is a user!" if the user does not exist, the server should respond "Who is Jimbo?" or "Who is Peter?"
 1. Create a route for the path `/year/:year`, which would match `/year/2001` or `/year/2020`. If the year route parameter is a valid year, it should respond like this:
     - "2020 is this year!"
     - "2015 was 5 years ago"
