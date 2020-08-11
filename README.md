@@ -114,7 +114,7 @@ const users = ['Sophia', 'Bob', 'Kim', 'John', 'Allan', 'Chloe', 'Jen', 'Ally', 
 ```
 
 1. In the server definition in `server.js`, create a route for the path `/users/:name`, so that a visitor could enter `/users/ben` or `/users/kim`. The server should respond "Ben is a user!" or "Ally is a user!" if the user does not exist, the server should respond "Who is Jimbo?" or "Who is Peter?"
-1. Create a route for the path `/year/:year`, which would match `/year/2001` or `/year/2020`. If the year route parameter is a valid year, it should respond like this:
+1. Create a route for the path `/years/:year`, which would match `/years/2001` or `/years/2020`. If the year route parameter is a valid year, it should respond like this:
     - "2020 is this year!"
     - "2015 was 5 years ago"
     - "2022 is in 2 years"
